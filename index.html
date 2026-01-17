@@ -1,160 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WANTED – Kashin</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English+SC&family=Crimson+Pro&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --paper:#F3E7C9;
-  --ink:#1B1B1B;
-  --red:#8B1E1E;
-  --brown:#5C4632;
-}
-
-body {
-  margin:0;
-  padding:32px 18px;
-  background:
-    url("https://www.transparenttextures.com/patterns/old-paper.png"),
-    var(--paper);
-  font-family:'Crimson Pro', serif;
-  color:var(--ink);
-}
-
-.wrapper {
-  max-width:420px;
-  margin:auto;
-}
-
-.poster {
-  position:relative;
-  background:var(--paper);
-  border:4px solid var(--brown);
-  padding:28px 22px 32px;
-  text-align:center;
-  box-shadow:0 18px 40px rgba(0,0,0,.35);
-}
-
-/* TOP TITLE */
-.wanted {
-  font-family:'IM Fell English SC', serif;
-  font-size:36px;
-  letter-spacing:6px;
-  margin-bottom:18px;
-}
-
-/* NAME */
-.name {
-  font-family:'Cinzel', serif;
-  font-size:40px;
-  letter-spacing:4px;
-  margin:18px 0;
-}
-
-/* SUBTEXT */
-.subtitle {
-  font-size:14px;
-  letter-spacing:2px;
-  margin-bottom:20px;
-}
-
-/* BOUNTY */
-.bounty {
-  font-family:'IM Fell English SC', serif;
-  font-size:20px;
-  letter-spacing:2px;
-  margin-top:18px;
-}
-
-/* STAMP */
-.stamp {
-  position:absolute;
-  top:18px;
-  right:18px;
-  transform:rotate(-14deg);
-  border:3px solid var(--red);
-  color:var(--red);
-  padding:6px 10px;
-  font-family:'IM Fell English SC', serif;
-  font-size:12px;
-  letter-spacing:2px;
-  opacity:.75;
-}
-
-/* AUTHORITY */
-.authority {
-  margin-top:26px;
-  font-family:'IM Fell English SC', serif;
-  font-size:14px;
-  letter-spacing:3px;
-}
-
-/* LINKS */
-.links {
-  margin-top:30px;
-}
-
-.link {
-  display:block;
-  margin:14px 0;
-  padding:16px;
-  background:#0B1C2D;
-  color:#F3E7C9;
-  text-decoration:none;
-  text-align:center;
-  font-size:16px;
-  letter-spacing:1px;
-  border-radius:6px;
-  box-shadow:0 6px 16px rgba(0,0,0,.3);
-  transition:transform .15s ease;
-}
-
-.link.red {
-  background:#8B1E1E;
-}
-
-.link:hover {
-  transform:translateY(-2px);
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kashin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-<div class="wrapper">
+  <main class="container">
+    <section class="card">
+      <span class="stamp">WANTED</span>
 
-  <div class="poster">
-    <div class="stamp">WANTED</div>
+      <p class="small">WANTED</p>
+      <h1>KASHIN</h1>
+      <p class="subtitle">Captain of the Digital Seas</p>
+      <p class="bounty">Bounty: ∞ Berries</p>
 
-    <div class="wanted">WANTED</div>
+      <div class="links">
+        <a href="#" class="btn">Instagram</a>
+        <a href="#" class="btn">X / Twitter</a>
+        <a href="#" class="btn spotify">Spotify</a>
+        <a href="#" class="btn">Discord</a>
+        <a href="#" class="btn">AniList</a>
+      </div>
+    </section>
 
-    <div class="name">KASHIN</div>
-
-    <div class="subtitle">
-      CAPTAIN OF THE DIGITAL SEAS<br>
-      DEAD OR ALIVE
-    </div>
-
-    <div class="bounty">
-      BOUNTY : ∞ BERRIES
-    </div>
-
-    <div class="authority">
-      ISSUED BY THE WORLD AUTHORITY
-    </div>
-  </div>
-
-  <div class="links">
-    <a class="link" href="https://www.instagram.com/trq.subhan" target="_blank">Instagram</a>
-    <a class="link" href="https://x.com/kashincarry" target="_blank">X / Twitter</a>
-    <a class="link red" href="https://open.spotify.com/user/31ijwephlhye4xhm2xa5y3le4cmi" target="_blank">Spotify</a>
-    <a class="link" href="https://discord.com/users/877340206762704896" target="_blank">Discord</a>
-    <a class="link" href="https://anilist.co/user/Kashin/" target="_blank">AniList</a>
-  </div>
-
-</div>
+    <footer>Sailing the Grand Line</footer>
+  </main>
 </body>
 </html>
