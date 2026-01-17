@@ -5,40 +5,50 @@ body {
   justify-content: center;
   align-items: center;
   background: #f4ecd8;
-  font-family: Georgia, serif;
+  font-family: "Georgia", serif;
 }
 
 .card {
   text-align: center;
+  padding: 40px 28px;
+  max-width: 360px;
+  width: 100%;
 }
 
 .small {
-  letter-spacing: 3px;
-  font-size: 14px;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-bottom: 12px;
 }
 
 h1 {
-  font-size: 42px;
-  margin: 12px 0;
+  font-size: 44px;
+  margin: 0 0 16px;
 }
 
 .bounty {
-  margin: 20px 0;
   font-size: 18px;
+  margin-bottom: 28px;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
 .btn {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: #111;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.btn:hover {
+  text-decoration: underline;
 }
 
 .spotify {
   color: #7a1c1c;
+  font-weight: bold;
 }
