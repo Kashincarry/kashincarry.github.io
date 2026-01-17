@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -5,50 +9,60 @@ body {
   justify-content: center;
   align-items: center;
   background: #f4ecd8;
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
+  color: #111;
 }
 
-.card {
-  text-align: center;
-  padding: 40px 28px;
-  max-width: 360px;
+/* Poster container */
+.poster {
   width: 100%;
+  max-width: 360px;
+  text-align: center;
+  padding: 40px 24px;
+  transform: translateY(-40px);
 }
 
-.small {
+/* Top label */
+.tag {
   letter-spacing: 4px;
   font-size: 13px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
-h1 {
+/* Name */
+.name {
   font-size: 44px;
-  margin: 0 0 16px;
+  margin: 0 0 18px;
 }
 
+/* Bounty */
 .bounty {
   font-size: 18px;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 
-.links {
+/* Links */
+.actions {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.btn {
+.link {
   text-decoration: none;
   color: #111;
   font-size: 18px;
   padding: 10px 0;
+  border-radius: 6px;
+  transition: background 0.15s ease;
 }
 
-.btn:hover {
-  text-decoration: underline;
+.link:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
-.spotify {
+/* Accent */
+.highlight {
   color: #7a1c1c;
   font-weight: bold;
 }
