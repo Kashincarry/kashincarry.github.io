@@ -5,39 +5,69 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WANTED – Kashin</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English+SC&family=Crimson+Pro&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --paper: #F3E7C9;
-  --ink: #0B1C2D;
-  --red: #8B1E1E;
-  --gold: #9E7C3A;
+  --paper:#F3E7C9;
+  --ink:#1B1B1B;
+  --red:#8B1E1E;
+  --brown:#5C4632;
 }
 
 body {
   margin:0;
-  padding:32px 20px;
+  padding:32px 18px;
+  background:
+    url("https://www.transparenttextures.com/patterns/old-paper.png"),
+    var(--paper);
   font-family:'Crimson Pro', serif;
   color:var(--ink);
-  background:
-    url("https://www.transparenttextures.com/patterns/paper-fibers.png"),
-    var(--paper);
 }
 
-.container {
+.wrapper {
   max-width:420px;
   margin:auto;
 }
 
-/* WANTED POSTER */
 .poster {
   position:relative;
   background:var(--paper);
-  border:3px solid var(--gold);
-  padding:32px 24px;
+  border:4px solid var(--brown);
+  padding:28px 22px 32px;
   text-align:center;
-  box-shadow:0 12px 30px rgba(0,0,0,.25);
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+}
+
+/* TOP TITLE */
+.wanted {
+  font-family:'IM Fell English SC', serif;
+  font-size:36px;
+  letter-spacing:6px;
+  margin-bottom:18px;
+}
+
+/* NAME */
+.name {
+  font-family:'Cinzel', serif;
+  font-size:40px;
+  letter-spacing:4px;
+  margin:18px 0;
+}
+
+/* SUBTEXT */
+.subtitle {
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+/* BOUNTY */
+.bounty {
+  font-family:'IM Fell English SC', serif;
+  font-size:20px;
+  letter-spacing:2px;
+  margin-top:18px;
 }
 
 /* STAMP */
@@ -45,97 +75,84 @@ body {
   position:absolute;
   top:18px;
   right:18px;
-  transform:rotate(-12deg);
+  transform:rotate(-14deg);
   border:3px solid var(--red);
   color:var(--red);
   padding:6px 10px;
-  font-size:11px;
+  font-family:'IM Fell English SC', serif;
+  font-size:12px;
   letter-spacing:2px;
   opacity:.75;
 }
 
-/* TEXT */
-.poster small {
-  letter-spacing:3px;
-}
-
-.poster h1 {
-  font-family:'Cinzel', serif;
-  margin:14px 0;
-  font-size:34px;
-}
-
-.subtitle {
+/* AUTHORITY */
+.authority {
+  margin-top:26px;
+  font-family:'IM Fell English SC', serif;
   font-size:14px;
-  letter-spacing:2px;
-  margin-bottom:12px;
+  letter-spacing:3px;
 }
 
 /* LINKS */
 .links {
-  margin-top:28px;
+  margin-top:30px;
 }
 
 .link {
   display:block;
-  padding:16px;
   margin:14px 0;
-  background:
-    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
-    #0B1C2D;
+  padding:16px;
+  background:#0B1C2D;
   color:#F3E7C9;
-  text-align:center;
   text-decoration:none;
-  border-radius:8px;
+  text-align:center;
   font-size:16px;
   letter-spacing:1px;
-  box-shadow:0 6px 18px rgba(0,0,0,.3);
-  transition:transform .15s ease, box-shadow .15s ease;
+  border-radius:6px;
+  box-shadow:0 6px 16px rgba(0,0,0,.3);
+  transition:transform .15s ease;
 }
 
 .link.red {
-  background:
-    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
-    #8B1E1E;
+  background:#8B1E1E;
 }
 
 .link:hover {
   transform:translateY(-2px);
-  box-shadow:0 10px 24px rgba(0,0,0,.4);
-}
-
-/* FOOTER MARK */
-.footer {
-  text-align:center;
-  margin-top:28px;
-  font-size:11px;
-  letter-spacing:2px;
-  opacity:.6;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
+<div class="wrapper">
 
   <div class="poster">
     <div class="stamp">WANTED</div>
-    <small>WANTED</small>
-    <h1>KASHIN</h1>
-    <div class="subtitle">CAPTAIN OF THE DIGITAL SEAS</div>
-    <small>Bounty: ∞ Berries</small>
+
+    <div class="wanted">WANTED</div>
+
+    <div class="name">KASHIN</div>
+
+    <div class="subtitle">
+      CAPTAIN OF THE DIGITAL SEAS<br>
+      DEAD OR ALIVE
+    </div>
+
+    <div class="bounty">
+      BOUNTY : ∞ BERRIES
+    </div>
+
+    <div class="authority">
+      ISSUED BY THE WORLD AUTHORITY
+    </div>
   </div>
 
   <div class="links">
-    <a class="link" href="https://www.instagram.com/trq.subhan?igsh=MWZrdHJnaXJ0eWYwOA%3D%3D&utm_source=qr" target="_blank">Instagram</a>
-    <a class="link" href="https://x.com/kashincarry?s=21" target="_blank">X / Twitter</a>
+    <a class="link" href="https://www.instagram.com/trq.subhan" target="_blank">Instagram</a>
+    <a class="link" href="https://x.com/kashincarry" target="_blank">X / Twitter</a>
     <a class="link red" href="https://open.spotify.com/user/31ijwephlhye4xhm2xa5y3le4cmi" target="_blank">Spotify</a>
     <a class="link" href="https://discord.com/users/877340206762704896" target="_blank">Discord</a>
     <a class="link" href="https://anilist.co/user/Kashin/" target="_blank">AniList</a>
-  </div>
-
-  <div class="footer">
-    SAILING THE GRAND LINE
   </div>
 
 </div>
